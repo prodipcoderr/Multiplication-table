@@ -1,25 +1,3 @@
-const submitBtn = () => {
-  const inputField = document.getElementById('input-field');
-  const inputFieldValue = inputField.value;
-  const multiValueNum = parseInt(inputFieldValue);
-
-  const mainSection = document.getElementById('data-show');
-  mainSection.innerText = '';
-
-  if (isNaN(multiValueNum)) {
-    alert('Please enter a valid number');
-  } else {
-    for (let i = 1; i <= 10; i++) {
-      const multiValue = multiValueNum * i;
-      console.log('🚀 ~ submitBtn ~ multiValue:', multiValue);
-
-      const div = document.createElement('div');
-      div.classList = `flex justify-center p-3 bg-gray-50 m-2 text-gray-600 rounded-sm`;
-      div.innerHTML = `
-      <h2 class = "hind-siliguri  font-medium">${multiValueNum} x ${i} = ${multiValue} </h2>
-      `;
-
-      mainSection.appendChild(div);
-    }
-  }
-};
+const submitBtn=()=>{let e=document.getElementById("input-field"),t=e.value,l=parseInt(t),i=document.getElementById("data-show");if(i.innerText="",isNaN(l))alert("Please enter a valid number");else for(let n=1;n<=10;n++){let s=l*n;console.log("\uD83D\uDE80 ~ submitBtn ~ multiValue:",s);let a=document.createElement("div");a.classList="flex justify-center p-3 bg-gray-50 m-2 text-gray-600 rounded-sm",a.innerHTML=`
+      <h2 class = "hind-siliguri  font-medium">${l} x ${n} = ${s} </h2>
+      `,i.appendChild(a)}};
