@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic multiplication table</title>
+    <link
+      rel="shortcut icon"
+      href="https://us.123rf.com/450wm/dxinerz/dxinerz1712/dxinerz171201604/91514657-number-equation-theory-icon-vector-image-can-also-be-used-for-math-symbols-suitable-for-use-on-web.jpg?ver=6"
+      type="image/x-icon"
+    />
+
+    <!-- CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+      .hind-siliguri {
+        font-family: 'Hind Siliguri', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container mx-auto p-4">
+        <h1
+          class="text-center bg-yellow-400 text-gray-600 p-4 hind-siliguri font-bold uppercase"
+        >
+          Basic multiplication table
+        </h1>
+        <div class="show-all-data lg:flex justify-between gap-10 mt-3 lg:mt-10">
+          <div
+            class="data-input bg-gray-200 lg:w-7/12 lg:h-72 p-6 flex items-center md:text-center"
+          >
+            <div class="field w-full">
+              <input
+                id="input-field"
+                type="text"
+                placeholder="Multiplication number"
+                class="w-full p-3 outline-none rounded-sm text-center lg:text-left"
+              />
+              <button
+                id="submitBtn"
+                class="btn w-full mt-5 bg-yellow-500 p-3 rounded-sm border-none hover:bg-green-500 hover:text-white"
+                onclick="submitBtn()"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+          <div
+            id="data-show"
+            class="bg-yellow-400 w-full m-h-1000 p-6 mt-3 lg:mt-0"
+          ></div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
